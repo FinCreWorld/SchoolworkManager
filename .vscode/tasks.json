@@ -4,7 +4,7 @@
     "args": [
         "-g",
         // 代表编译当前文件
-        "${file}",
+        "${fileDirname}\\*.cpp",
         "-o",
         // 代表将生成的 .exe 文件放在工作区目录下的exe文件夹中
         "${workspaceFolder}/exe/${fileBasenameNoExtension}.exe"
