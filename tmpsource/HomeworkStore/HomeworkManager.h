@@ -24,8 +24,8 @@ class HomeworkManager{
     HomeworkManager();
 
 
-    Homework& setHomeworkList(vector<Homework>);
-    Homework& setHomeworksUrl(string);
+    HomeworkManager& setHomeworkList(vector<Homework>);
+    HomeworkManager& setHomeworksUrl(string);
 
     vector<Homework> getHomeworkList();
     string getHomeworkUrl();
