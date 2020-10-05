@@ -8,17 +8,27 @@ using namespace std;
 class Homework{
     private:
     // 用于存储文件的位置
-    string url;
     string studentId;
     string homeworkId;
     string courseId;
+    string recordUrl;
+    string homeworkUrl;
     static string SPLIT;    // 静态常量必须在类内声明，在类外初始化
 
     public:
+    // 构造函数
     Homework(string studentId, string homeworkId, string courseId);
+
+    // 提交函数
     static string submit(Homework homework);
-    void setUrl(string url);
-    string getUrl();
+
+    // set 函数
+    Homework setRecordUrl(string recordUrl);
+    Homework setHomeworkUrl(string homeworkUrl);
+
+    // get 函数
+    string getRecordUrl();
+    string getHomeworkUrl();
     string getStudentId();
     string getHomeworkId();
     string getcourseId();

@@ -1,0 +1,21 @@
+Homework 类
+
+属性
+
+private：
+string recordUrl：记录存放的Url
+string homeworkUrl：作业存放的位置
+string studentId：学生的ID
+string courseID：课程的ID
+string static SPLIT：分割符
+
+动作
+
+public：
+Homework(studentID, homeworkID, courseID) 构造函数
+static submit(homework) 将作业放置在固定的位置
+setUrl() 设置作业的 url
+getUrl() 得到作业的 url
+getStudentId() 得到学生的ID
+getHomeworkId() 得到作业的ID
+getcourseId() 得到课程的ID
