@@ -11,13 +11,13 @@ Homework::Homework(string studentId, string homeworkId, string courseId){
 }
 
 // 设置记录存放的地址
-Homework Homework::setRecordUrl(string recordUrl){
+Homework& Homework::setRecordUrl(string recordUrl){
     this->recordUrl = recordUrl;
     return *this;
 }
 
 // 设置作业存放的地址
-Homework Homework::setHomeworkUrl(string homeworkUrl){
+Homework& Homework::setHomeworkUrl(string homeworkUrl){
     this->homeworkUrl = homeworkId;
     return *this;
 }
@@ -33,7 +33,7 @@ string Homework::getHomeworkId(){
 }
 
 // 得到班级的 id 号
-string Homework::getcourseId(){
+string Homework::getCourseId(){
     return courseId;
 }
 
@@ -60,7 +60,7 @@ string Homework::submit(Homework homework){
     }
     output<<homework.getStudentId()+SPLIT;
     output<<homework.getHomeworkId()+SPLIT;
-    output<<homework.getcourseId()+SPLIT;
+    output<<homework.getCourseId()+SPLIT;
     output<<homework.getRecordUrl()+SPLIT;
     output<<homework.getHomeworkUrl()+SPLIT;
     output.close();

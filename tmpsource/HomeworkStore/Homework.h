@@ -1,3 +1,5 @@
+#ifndef HOMEWORK_H
+#define HOMEWORK_H
 #include<string>
 using namespace std;
 /*
@@ -23,13 +25,14 @@ class Homework{
     static string submit(Homework homework);
 
     // set 函数
-    Homework setRecordUrl(string recordUrl);
-    Homework setHomeworkUrl(string homeworkUrl);
+    Homework& setRecordUrl(string recordUrl);
+    Homework& setHomeworkUrl(string homeworkUrl);
 
     // get 函数
     string getRecordUrl();
     string getHomeworkUrl();
     string getStudentId();
     string getHomeworkId();
-    string getcourseId();
+    string getCourseId();
 };
+#endif  // HOMEWORK_H
